@@ -1,56 +1,16 @@
-/* menuShow */ 
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+ScrollReveal({
+    distance: '80px',
+    duration: 2500,
+    delay: 555
+  });
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
-showMenu('nav-toggle','nav-menu')
-
-/* mobile menu remove*/
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*Scroll section active links*/
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
-/*Scroll Reveal*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-//     reset: true
-});
-
-sr.reveal('.home__data',{}); 
-sr.reveal('.about__subtitle, .about__text',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.contact__input',{interval: 200}); 
+  ScrollReveal().reveal('.home-data', { delay: 90, origin: 'left'});
+  ScrollReveal().reveal('.about-title', { delay: 150, origin: 'top'});
+  ScrollReveal().reveal('.about-img', { delay: 300, origin: 'top'});
+  ScrollReveal().reveal('.about-subtitle, .about-text', { delay: 200, origin: 'left'});
+  ScrollReveal().reveal('.pro-title', { delay: 200, origin: 'top', interval: 100});
+  ScrollReveal().reveal('.img-link', { delay: 300, origin: 'bottom', interval: 100});
+  ScrollReveal().reveal('.contact-title', { delay: 90, origin: 'top', interval: 100});
+  ScrollReveal().reveal('.contact-input', { delay: 90, origin: 'bottom'});
+  ScrollReveal().reveal('.btn', { delay: 700, origin: 'left'});
+  ScrollReveal().reveal('.fa', { delay: 300, origin: 'top'});
