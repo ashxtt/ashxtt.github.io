@@ -1,109 +1,100 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ashton's Portfolio</title>
-        
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
-        <!--===== Header =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Ashton</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== Home =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Ashton</span><br> Software Engineer</h1>
-
-                    <a href="#" class="button">Say Hello</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                
-            </section>
-
-            <!--===== About =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'm Ashton Bowens</h2>
-                        <p class="about__text">I'm a OC-based Software engineer</p>           
-                    </div>                                   
-                </div>
-            </section>
-            
-
-            <!--===== My Work =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">My Work</h2>
-                <div class="work__container bd-grid">
-                    
-                </div>
-            </section>
-
-            <!--===== Contact =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== Footer =====-->
-        <footer class="footer">
-            <p class="footer__title"></p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+       <!--Header-->
+       <header class="header1">
+        <nav class="navi-bar">
+           
+           
+            <div class="nav-menu" >
+                <ul class="nav-list">
+                    <li class ="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class ="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class ="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class ="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="toggle-nav">
+                <i class="box-menu"></i>
+            </div>
+        </nav>
+       </header>
+        <!--End of Header-->
 
+        <!--Home-->
+       <section class="home-main" id="home">
+        <div class="home-data">
+            <h1 class="home-ttle">Hi, <br>I'm <span class="name-color">Ashton</span><br> Software Enginner</h1>
+        </div>
+       </section>
 
-       <!-- Scroll Reveal -->
+       <!--about-->
+       <section class="about" id="about-sec">
+        <h2 class="about-title">
+            About 
+        </h2>
+        <div class="about-cont">
+            <div class="about-img">
+                <img src="https://i.pinimg.com/originals/d1/96/a9/d196a94b9d8cda6edfd3a65237aa8fb5.gif" width="180" height="150">
+            </div>
+            <div>
+                <h2 class="about-subtitle">I'm Ashton Bowens</h2>
+                <p class="about-text">A self-motivated, aspiring software engineer passionate
+                    about learning and growing within the tech community. <br><br> Software Engineering is
+                    where my creativity, attention to detail, and innovative spirit
+                    all come together.<br> <br>I am currently enrolled in the General
+                    Assembly Software Engineering Immersive course and have
+                    gained experience in building fullstack applications using
+                    HTML, CSS, JavaScript, Express.js, Node.js, REST.</p>
+            </div>
+        </div>
+       </section>
+
+       <!--projects-->
+       <section class="projects" id="project-sec">
+        <h2 class="pro-title">Projects</h2>
+        <div class="pro-cont">
+            <ul class="img-list">
+                <li class="img-link"><a href="#gihy-1"><img src="https://i.pinimg.com/originals/61/34/31/61343192396756773fb4f0162ff03f7f.gif" width="100" height="90">One</a></li>
+                <li class="img-link"><a href="#gihy-1"><img src="https://i.pinimg.com/originals/92/4e/ea/924eead2c68ceedd99ee2f549d54cd83.gif" width="140" height="140">Two</a></li>
+                <li class="img-link"><a href="#gihy-1"><img src="https://i.pinimg.com/originals/8d/d1/76/8dd176c04a07c37b80a640dbc73382ff.gif" width="100" height="90">Three</a></li>
+            </ul>
+        </div>
+       </section>
+
+       <!--Contact-->
+       <section class="contact" id="contact-sec">
+        <h2 class="contact-title">Say Hello<span class="span">!</span></h2>
+        <div class="contact-cont">
+            <form action="" class="contact-form">
+                <input type="text" placeholder="Name" class="contact-input">
+                <input type="text" placeholder="Email" class="contact-input">
+                <textarea name="" id="" cols="0" row="5" placeholder="text" class="contact-input"></textarea>
+            </form>
+        </div>
+        <div class="btn">
+            <button class="send-btn">Send</button>
+        </div>
+       </section>
+
+       <!--footer-->
+       <footer class="footer">
+        <div class="footer-social">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+       </footer>
        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- MAIN JAVASCRIPT -->
-        <script  src="script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
