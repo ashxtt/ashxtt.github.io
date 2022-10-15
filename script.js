@@ -14,3 +14,4 @@ ScrollReveal({
   ScrollReveal().reveal('.contact-input', { delay: 90, origin: 'bottom'});
   ScrollReveal().reveal('.btn', { delay: 700, origin: 'left'});
   ScrollReveal().reveal('.fa', { delay: 300, origin: 'top'});
+  
